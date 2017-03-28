@@ -9,6 +9,7 @@ import warnings
 from util import *
 import iris
 import income
+from sklearn.neighbors import KNeighborsClassifier
 warnings.filterwarnings('ignore')
 
 # Start of execution #
@@ -21,18 +22,17 @@ dataset_name = sys.argv[2]
 training_file_path = sys.argv[3]
 test_file_path = sys.argv[4]
 extended_run = len(sys.argv) > 5
-dataset = iris if dataset_name == "Iris" else income
-(training_records, training_set_classes, test_records, test_set_classes) = dataset.prepare_training_and_test(training_file_path, test_file_path)
-similarity_scores = k_similar_records(test_records, training_records, metadata = dataset.metadata())
-neighbor_classes = map_to_class(similarity_scores, training_set_classes)
 
-if extended_run:
-	k_values = xrange(5,25)
-	results = repeat_knn(neighbor_classes, k_values, test_set_classes, dataset.class_values())
-	dataset.print_csv(results, test_set_classes)
-	# for k in np.sort(results.keys()):
-	# 	dataset.print_stats(k, results[k])
-else:
-	predictions = knn_classify(k, neighbor_classes)
-	predicted_classes = [ x[0] for x in predictions]
-	print_classifier_output(test_set_classes, predictions)
+dataset = income
+(training_records, training_set_classes, test_records, test_set_classes) = dataset.prepare_training_and_test(training_file_path, test_file_path)
+stats_map = {}
+
+for k in xrange(5,25):
+	classifier = KNeighborsClassifier(n_neighbors = k, weights='uniform', p=2)
+	classifier.fit(training_records, training_set_classes)
+
+	predicted_classes = classifier.predict(test_records)
+	prediction_probabs = np.max(classifier.predict_proba(test_records), axis=1)
+	stats_map[k] = get_binary_stats(test_set_classes, predicted_classes, dataset.class_values(), prediction_probabs)
+
+dataset.print_csv(stats_map, test_set_classes)

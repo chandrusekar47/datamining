@@ -1,0 +1,300 @@
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.33  0.67]
+ [ 0.11  0.89]]
+k=5
+Accuracy: 0.61
+Precision: 0.75
+Recall: 0.33
+F: 0.46
+TPR: 0.33
+FPR: 0.11
+FNR: 0.67
+TNR: 0.89
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.27  0.73]
+ [ 0.06  0.94]]
+k=6
+Accuracy: 0.6
+Precision: 0.81
+Recall: 0.27
+F: 0.4
+TPR: 0.27
+FPR: 0.06
+FNR: 0.73
+TNR: 0.94
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.31  0.69]
+ [ 0.1   0.9 ]]
+k=7
+Accuracy: 0.61
+Precision: 0.77
+Recall: 0.31
+F: 0.45
+TPR: 0.31
+FPR: 0.1
+FNR: 0.69
+TNR: 0.9
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.27  0.73]
+ [ 0.07  0.93]]
+k=8
+Accuracy: 0.6
+Precision: 0.79
+Recall: 0.27
+F: 0.4
+TPR: 0.27
+FPR: 0.07
+FNR: 0.73
+TNR: 0.93
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.27  0.73]
+ [ 0.09  0.91]]
+k=9
+Accuracy: 0.59
+Precision: 0.75
+Recall: 0.27
+F: 0.4
+TPR: 0.27
+FPR: 0.09
+FNR: 0.73
+TNR: 0.91
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.22  0.78]
+ [ 0.06  0.94]]
+k=10
+Accuracy: 0.58
+Precision: 0.78
+Recall: 0.22
+F: 0.35
+TPR: 0.22
+FPR: 0.06
+FNR: 0.78
+TNR: 0.94
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.25  0.75]
+ [ 0.08  0.92]]
+k=11
+Accuracy: 0.59
+Precision: 0.77
+Recall: 0.25
+F: 0.38
+TPR: 0.25
+FPR: 0.08
+FNR: 0.75
+TNR: 0.92
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.21  0.79]
+ [ 0.05  0.95]]
+k=12
+Accuracy: 0.58
+Precision: 0.79
+Recall: 0.21
+F: 0.33
+TPR: 0.21
+FPR: 0.05
+FNR: 0.79
+TNR: 0.95
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.27  0.73]
+ [ 0.07  0.93]]
+k=13
+Accuracy: 0.6
+Precision: 0.8
+Recall: 0.27
+F: 0.4
+TPR: 0.27
+FPR: 0.07
+FNR: 0.73
+TNR: 0.93
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.18  0.82]
+ [ 0.06  0.94]]
+k=14
+Accuracy: 0.56
+Precision: 0.75
+Recall: 0.18
+F: 0.29
+TPR: 0.18
+FPR: 0.06
+FNR: 0.82
+TNR: 0.94
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.24  0.76]
+ [ 0.06  0.94]]
+k=15
+Accuracy: 0.59
+Precision: 0.79
+Recall: 0.24
+F: 0.37
+TPR: 0.24
+FPR: 0.06
+FNR: 0.76
+TNR: 0.94
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.21  0.79]
+ [ 0.05  0.95]]
+k=16
+Accuracy: 0.58
+Precision: 0.81
+Recall: 0.21
+F: 0.33
+TPR: 0.21
+FPR: 0.05
+FNR: 0.79
+TNR: 0.95
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.25  0.75]
+ [ 0.07  0.93]]
+k=17
+Accuracy: 0.59
+Precision: 0.78
+Recall: 0.25
+F: 0.38
+TPR: 0.25
+FPR: 0.07
+FNR: 0.75
+TNR: 0.93
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.21  0.79]
+ [ 0.04  0.96]]
+k=18
+Accuracy: 0.58
+Precision: 0.84
+Recall: 0.21
+F: 0.33
+TPR: 0.21
+FPR: 0.04
+FNR: 0.79
+TNR: 0.96
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.22  0.78]
+ [ 0.05  0.95]]
+k=19
+Accuracy: 0.59
+Precision: 0.82
+Recall: 0.22
+F: 0.35
+TPR: 0.22
+FPR: 0.05
+FNR: 0.78
+TNR: 0.95
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.15  0.85]
+ [ 0.05  0.95]]
+k=20
+Accuracy: 0.55
+Precision: 0.77
+Recall: 0.15
+F: 0.25
+TPR: 0.15
+FPR: 0.05
+FNR: 0.85
+TNR: 0.95
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.21  0.79]
+ [ 0.05  0.95]]
+k=21
+Accuracy: 0.58
+Precision: 0.82
+Recall: 0.21
+F: 0.33
+TPR: 0.21
+FPR: 0.05
+FNR: 0.79
+TNR: 0.95
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.13  0.87]
+ [ 0.04  0.96]]
+k=22
+Accuracy: 0.55
+Precision: 0.79
+Recall: 0.13
+F: 0.23
+TPR: 0.13
+FPR: 0.04
+FNR: 0.87
+TNR: 0.96
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.24  0.76]
+ [ 0.04  0.96]]
+k=23
+Accuracy: 0.6
+Precision: 0.87
+Recall: 0.24
+F: 0.37
+TPR: 0.24
+FPR: 0.04
+FNR: 0.76
+TNR: 0.96
+
+
+Confusion matrix
+>50K <=50K
+[[ 0.18  0.82]
+ [ 0.04  0.96]]
+k=24
+Accuracy: 0.57
+Precision: 0.83
+Recall: 0.18
+F: 0.29
+TPR: 0.18
+FPR: 0.04
+FNR: 0.82
+TNR: 0.96

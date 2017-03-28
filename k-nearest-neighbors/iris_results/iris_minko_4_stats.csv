@@ -1,0 +1,220 @@
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.67  0.33]
+ [ 0.    0.15  0.85]]
+k=5
+Accuracy: 0.84
+blah
+1.0,0.666666666667,0.85
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.73  0.27]
+ [ 0.    0.2   0.8 ]]
+k=6
+Accuracy: 0.84
+blah
+1.0,0.733333333333,0.8
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.63  0.37]
+ [ 0.    0.15  0.85]]
+k=7
+Accuracy: 0.83
+blah
+1.0,0.633333333333,0.85
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.63  0.37]
+ [ 0.    0.2   0.8 ]]
+k=8
+Accuracy: 0.81
+blah
+1.0,0.633333333333,0.8
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.63  0.37]
+ [ 0.    0.1   0.9 ]]
+k=9
+Accuracy: 0.84
+blah
+1.0,0.633333333333,0.9
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.2   0.8 ]]
+k=10
+Accuracy: 0.81
+blah
+1.0,0.633333333333,0.8
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.1   0.9 ]]
+k=11
+Accuracy: 0.84
+blah
+1.0,0.633333333333,0.9
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.67  0.3 ]
+ [ 0.    0.15  0.85]]
+k=12
+Accuracy: 0.84
+blah
+1.0,0.666666666667,0.85
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.05  0.95]]
+k=13
+Accuracy: 0.86
+blah
+1.0,0.633333333333,0.95
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.1   0.9 ]]
+k=14
+Accuracy: 0.84
+blah
+1.0,0.633333333333,0.9
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.05  0.95]]
+k=15
+Accuracy: 0.86
+blah
+1.0,0.633333333333,0.95
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.15  0.85]]
+k=16
+Accuracy: 0.83
+blah
+1.0,0.633333333333,0.85
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.1   0.9 ]]
+k=17
+Accuracy: 0.84
+blah
+1.0,0.633333333333,0.9
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.15  0.85]]
+k=18
+Accuracy: 0.83
+blah
+1.0,0.633333333333,0.85
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.05  0.95]]
+k=19
+Accuracy: 0.86
+blah
+1.0,0.633333333333,0.95
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.67  0.3 ]
+ [ 0.    0.05  0.95]]
+k=20
+Accuracy: 0.87
+blah
+1.0,0.666666666667,0.95
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.63  0.33]
+ [ 0.    0.05  0.95]]
+k=21
+Accuracy: 0.86
+blah
+1.0,0.633333333333,0.95
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.67  0.3 ]
+ [ 0.    0.05  0.95]]
+k=22
+Accuracy: 0.87
+blah
+1.0,0.666666666667,0.95
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.67  0.3 ]
+ [ 0.    0.05  0.95]]
+k=23
+Accuracy: 0.87
+blah
+1.0,0.666666666667,0.95
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.03  0.67  0.3 ]
+ [ 0.    0.05  0.95]]
+k=24
+Accuracy: 0.87
+blah
+1.0,0.666666666667,0.95

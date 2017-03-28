@@ -1,0 +1,180 @@
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.37  0.63]
+ [ 0.    0.45  0.55]]
+k=5
+Accuracy: 0.64
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.57  0.43]
+ [ 0.    0.55  0.45]]
+k=6
+Accuracy: 0.67
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.   0.   0. ]
+ [ 0.   0.4  0.6]
+ [ 0.   0.3  0.7]]
+k=7
+Accuracy: 0.7
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.53  0.47]
+ [ 0.    0.55  0.45]]
+k=8
+Accuracy: 0.66
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.37  0.63]
+ [ 0.    0.35  0.65]]
+k=9
+Accuracy: 0.67
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.47  0.53]
+ [ 0.    0.45  0.55]]
+k=10
+Accuracy: 0.67
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.4   0.6 ]
+ [ 0.    0.45  0.55]]
+k=11
+Accuracy: 0.65
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.47  0.53]
+ [ 0.    0.45  0.55]]
+k=12
+Accuracy: 0.67
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.43  0.57]
+ [ 0.    0.3   0.7 ]]
+k=13
+Accuracy: 0.71
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.47  0.53]
+ [ 0.    0.35  0.65]]
+k=14
+Accuracy: 0.71
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.43  0.57]
+ [ 0.    0.3   0.7 ]]
+k=15
+Accuracy: 0.71
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.47  0.53]
+ [ 0.    0.3   0.7 ]]
+k=16
+Accuracy: 0.72
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.4   0.6 ]
+ [ 0.    0.25  0.75]]
+k=17
+Accuracy: 0.72
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.53  0.47]
+ [ 0.    0.35  0.65]]
+k=18
+Accuracy: 0.73
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.   0.   0. ]
+ [ 0.   0.3  0.7]
+ [ 0.   0.3  0.7]]
+k=19
+Accuracy: 0.67
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.37  0.63]
+ [ 0.    0.35  0.65]]
+k=20
+Accuracy: 0.67
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.   0.   0. ]
+ [ 0.   0.3  0.7]
+ [ 0.   0.3  0.7]]
+k=21
+Accuracy: 0.67
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.37  0.63]
+ [ 0.    0.4   0.6 ]]
+k=22
+Accuracy: 0.66
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.    0.    0.  ]
+ [ 0.    0.3   0.7 ]
+ [ 0.    0.35  0.65]]
+k=23
+Accuracy: 0.65
+
+
+Confusion matrix
+Iris-setosa Iris-versicolor Iris-virginica
+[[ 1.   0.   0. ]
+ [ 0.   0.3  0.7]
+ [ 0.   0.4  0.6]]
+k=24
+Accuracy: 0.63

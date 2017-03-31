@@ -1,0 +1,22 @@
+Running k-means clustering for all datasets
+-----------------------------------------------
+Place the csv files inside the data folder and run the following command
+
+bash ./run.sh
+
+This will run the k-means clustering algorithm for TwoDimEasy k=2, TwoDimHard k=4, Wine k=3
+
+
+Running datasets individually
+-----------------------------
+Use the following command
+
+python k_means_clustering.py <Wine|Easy|Hard> <value-of-k>
+
+
+
+Output format
+------------------
+
+row_id, cluster number, predicted_true_cluster_number
+

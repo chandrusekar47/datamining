@@ -216,29 +216,33 @@ def main(filename, converters, point_columns, true_cluster_column, id_column, sh
 	if should_normalize:
 		normalize_data(points, range(0, len(point_columns)))
 	centroids = choose_k_centroids(points, k)
-	(cluster_numbers, new_centroids) = k_means_clustering(points, centroids)
+	# (cluster_numbers, new_centroids) = k_means_clustering(points, centroids)
 	# (new_centroids, cluster_numbers) = vq.kmeans2(points, k=k, minit = 'random')
+	print("Running birch")
+	brc = brc = Birch(branching_factor=50, n_clusters=k, threshold=0.01, compute_labels = False)
+	brc.fit(points)
+	cluster_numbers = brc.predict(points)
 	assigned_classes = assign_classes(cluster_numbers, true_cluster_numbers)
 	all_pair_distances = compute_all_pair_distances(points)
-	# np.set_printoptions(formatter={'float': '{: 0.3f}'.format})
-	# ret_val = (compute_sse(points, cluster_numbers)[1], compute_ssb(points, cluster_numbers)[1], silhouette_width(points, cluster_numbers, all_pair_distances)[1], calc_confusion_matrix(true_cluster_numbers, assigned_classes)[0][0], calc_confusion_matrix(true_cluster_numbers, assigned_classes)[1][1])
-	# print("k="+str(k))
+	np.set_printoptions(formatter={'float': '{: 0.3f}'.format})
+	ret_val = (compute_sse(points, cluster_numbers)[1], compute_ssb(points, cluster_numbers)[1], silhouette_width(points, cluster_numbers, all_pair_distances)[1], calc_confusion_matrix(true_cluster_numbers, assigned_classes)[0][0], calc_confusion_matrix(true_cluster_numbers, assigned_classes)[1][1])
+	print("k="+str(k))
 	# print("True cluster level SSE: %s, True overall cluster SSE: %0.4f"%(compute_sse(points, true_cluster_numbers)))
 	# print("True cluster level SSB: %s, True overall cluster SSB: %0.4f"%(compute_ssb(points, true_cluster_numbers)))
 	# print("Silhouette width by cluster: %s, Silhouette width: %0.4f"%(silhouette_width(points, true_cluster_numbers, all_pair_distances)))
-	# print("Predicted cluster level SSE: %s, Predicted overall cluster SSE: %0.4f"%(compute_sse(points, cluster_numbers)))
-	# print("Predicted cluster level SSB: %s, Predicted overall cluster SSB: %0.4f"%(compute_ssb(points, cluster_numbers)))
-	# print("Silhouette width by cluster: %s, Silhouette width: %0.4f"%(silhouette_width(points, cluster_numbers, all_pair_distances)))
-	# print("Confusion matrix: %s"%(calc_confusion_matrix(true_cluster_numbers, assigned_classes)))
+	print("Predicted cluster level SSE: %s, Predicted overall cluster SSE: %0.4f"%(compute_sse(points, cluster_numbers)))
+	print("Predicted cluster level SSB: %s, Predicted overall cluster SSB: %0.4f"%(compute_ssb(points, cluster_numbers)))
+	print("Silhouette width by cluster: %s, Silhouette width: %0.4f"%(silhouette_width(points, cluster_numbers, all_pair_distances)))
+	print("Confusion matrix: %s"%(calc_confusion_matrix(true_cluster_numbers, assigned_classes)))
 	# if len(point_columns) == 2:
 	# 	fig_filename = os.path.join('images', "k_%s_%s_%s.png"%(k, file_name(filename), int(time.time())))
 	# 	plot_values('Scatter plot between features X1 and X2','X1', 'X2', points, cluster_numbers, true_cluster_numbers, assigned_classes, fig_filename)
 	# else:
 	# 	compute_quality_metrics(cluster_numbers, data[:, 12])
-	print("row ID, cluster number, predicted true cluster number")
-	for ind,point in enumerate(points):
-		print("%s, %s, %s"%(int(record_ids[ind]), cluster_numbers[ind], int(assigned_classes[ind])))
-	# return ret_val
+	# print("row ID, cluster number, predicted true cluster number")
+	# for ind,point in enumerate(points):
+	# 	print("%s, %s, %s"%(int(record_ids[ind]), cluster_numbers[ind], int(assigned_classes[ind])))
+	return ret_val
 
 if __name__ == '__main__':
 	id_converter = lambda x: float(x.strip('"'))
@@ -253,17 +257,17 @@ if __name__ == '__main__':
 	dataset_chosen = sys.argv[1]
 	k = int(sys.argv[2])
 	if dataset_chosen == "Wine":
-		# k_values = [17,18,19,20,21,22]
-		# output_of_runs = np.zeros((len(k_values), 5))
-		# for i in xrange(0,30):
-		# 	for ind, k in enumerate(k_values):
-		# 		ret_val = main(*datasets[dataset_chosen], k=k)
-		# 		ret_val = np.array([x for x in ret_val])
-		# 		output_of_runs[ind, :] += ret_val
-		# output_of_runs = output_of_runs / 30.0
-		# print("k, avg sse, avg ssb, s_w, tpr, tnr")
-		# for ind,k in enumerate(k_values):
-		# 	print("%s, %0.3f, %0.3f, %0.3f, %0.3f, %0.3f"%(k, output_of_runs[ind][0], output_of_runs[ind][1], output_of_runs[ind][2], output_of_runs[ind][3], output_of_runs[ind][4]))
-		main(*datasets[dataset_chosen], k=k)
+		k_values = list(range(2,12))
+		output_of_runs = np.zeros((len(k_values), 5))
+		for i in xrange(0,30):
+			for ind, k in enumerate(k_values):
+				ret_val = main(*datasets[dataset_chosen], k=k)
+				ret_val = np.array([x for x in ret_val])
+				output_of_runs[ind, :] += ret_val
+		output_of_runs = output_of_runs / 30.0
+		print("k, avg sse, avg ssb, s_w, tpr, tnr")
+		for ind,k in enumerate(k_values):
+			print("%s, %0.3f, %0.3f, %0.3f, %0.3f, %0.3f"%(k, output_of_runs[ind][0], output_of_runs[ind][1], output_of_runs[ind][2], output_of_runs[ind][3], output_of_runs[ind][4]))
+		# main(*datasets[dataset_chosen], k=k)
 	else:
 		main(*datasets[dataset_chosen], k=k)
